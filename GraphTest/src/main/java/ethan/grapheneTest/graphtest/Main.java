@@ -15,11 +15,11 @@ import java.awt.Graphics;
 import java.awt.Graphics2D;
 import java.awt.image.BufferedImage;
 import java.util.ArrayList;
-import java.util.Arrays;
+ 
 import java.util.List;
 
 import javax.swing.SwingUtilities;
-import org.epics.graphene.AxisRanges;
+ 
  
 
 import org.epics.graphene.BubbleGraph2DRenderer;
@@ -114,7 +114,7 @@ public class Main extends JFrame{
 	public void paintComponent( Graphics g ) {
 	    Graphics2D g2d = (Graphics2D) g;
 	    super.paintComponent( g2d );
-	    if ( image != null ) {
+  	    if ( image != null ) {
                 
 		g2d.drawImage( image , 0 , 0 , image.getWidth() , image.getHeight() , null );
 	    }
